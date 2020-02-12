@@ -19,3 +19,6 @@ jobs:
     vmImage: 'ubuntu-16.04'
   steps:
   - script: echo hello from Linux
+  steps:
+  - publish: $(System.DefaultWorkingDirectory)/bin/WebApp
+    artifact: WebApp
